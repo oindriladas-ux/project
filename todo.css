@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, pink, yellow);
+}
+
+#main-heading{
+  margin-top: 20px;
+    text-align : center;
+}
+#task-heading{
+  margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 15px;
+    font-size: 30px;
+}
+#input-txt {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 30px;
+ width: 100px; 
+ height: 40px;
+ padding: 10px;
+ background-color: pink;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-button{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: large;
+}
+
+
+button:hover {
+  background-color: hotpink;
+  transform: scale(1.05);
+}
+#delete-button{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: large;
+
+}
+#todo-container{
+  margin-top: 40px;
+  margin-left: 20px;
+  font-family: "Molle", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 25px;
+}
+#show-date{
+  margin-left: 15px;
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  
+}
+#take-task .input-text {
+  margin-top: 40px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 350px;
+  padding:  10px;
+  height: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
