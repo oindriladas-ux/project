@@ -9,13 +9,15 @@ body{
 
 #main-heading{
   margin-top: 20px;
-    text-align : center;
+  text-align : center;
+  padding-bottom: 30px;
+  font-size: 40px;
 }
 #task-heading{
   margin-top: 30px;
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 15px;
-    font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 15px;
+  font-size: 30px;
 }
 #input-txt {
   padding: 10px;
