@@ -60,6 +60,7 @@ button:hover {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-size: large;
+  
 
 }
 #todo-container{
@@ -68,6 +69,10 @@ button:hover {
   font-family: "Molle", sans-serif;
   font-optical-sizing: auto;
   font-size: 25px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ 
 }
 #show-date{
   margin-left: 15px;

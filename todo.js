@@ -4,7 +4,7 @@ displaytask();
 function addtask() {
     let input=document.querySelector('.input-text');
     let todoitem=input.value;
-    todolist.push(todoitem);
+    todolist.push({item: todoitem});
     input.value='';
     displaytask();
 }
@@ -15,9 +15,10 @@ function displaytask() {
         let newhtml ='';
 
         for(let i=0;i<todolist.length;i++) {
+            let item=todolist[i].item;
             newhtml+=`
             <div>
-            <span> <i class="fa-solid fa-heart"></i> ${todolist[i]}</span>
+            <span> <i class="fa-solid fa-heart"></i> ${item}</span>
             <button id="delete-button" onclick="
                todolist.splice(${i},1);
                displaytask();
