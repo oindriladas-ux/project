@@ -3,8 +3,8 @@
   padding: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, pink, yellow);
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, pink, yellow);
 }
 
 #main-heading{
@@ -13,12 +13,14 @@ body{
   padding-bottom: 30px;
   font-size: 40px;
 }
+
 #task-heading{
   margin-top: 30px;
   font-family: 'Quicksand', sans-serif;
   margin-left: 15px;
   font-size: 30px;
 }
+
 #input-txt {
   padding: 10px;
   border-radius: 10px;
@@ -47,9 +49,9 @@ button {
 
 #show-date{
   border-radius: 30px;
-   background-color: deeppink;
-   width: 200px;
-   padding: 10px;
+  background-color: deeppink;
+  width: 200px;
+  padding: 10px;
    
 }
 
@@ -57,6 +59,7 @@ button:hover {
   background-color: hotpink;
   transform: scale(1.05);
 }
+
 #delete-button{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -64,6 +67,7 @@ button:hover {
   
 
 }
+
 #todo-container{
   margin-top: 40px;
   margin-left: 20px;
@@ -75,12 +79,14 @@ button:hover {
  gap: 10px;
  
 }
+
 #show-date{
   margin-left: 15px;
   margin-top: 20px;
   font-family: "Josefin Sans", sans-serif;
   
 }
+
 #take-task .input-text {
   margin-top: 40px;
   margin-left: 10px;

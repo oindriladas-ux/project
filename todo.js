@@ -28,9 +28,9 @@ function displaytask() {
             
         }
         containerelement.innerHTML= newhtml;
- }
+}
 
- function showdate(){
+function showdate(){
     let todaydate= new Date();
     let datecontainer=document.querySelector('#show-date');
 
@@ -40,6 +40,6 @@ function displaytask() {
     let day=todaydate.getDate();
     let year=todaydate.getFullYear();
     datecontainer.innerHTML=`Date: ${day} ${monthname}, ${year}`;
- }
-    console.log(todoitem);
+}
+  
 
