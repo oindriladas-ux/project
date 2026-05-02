@@ -64,7 +64,7 @@ button:hover {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-size: large;
-  
+  cursor: pointer;
 
 }
 
@@ -96,4 +96,20 @@ button:hover {
   padding:  10px;
   height: 20px;
   font-family: "Josefin Sans", sans-serif;
+}
+
+#input-container #delete-button {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 300px;   
+  margin-right: 10px auto;
 }

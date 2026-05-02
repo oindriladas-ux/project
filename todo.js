@@ -1,15 +1,25 @@
-let todolist=[];
+let todolist= JSON.parse(localStorage.getItem('todolist')) || [];
 displaytask();
 
+function savetolocal(){
+    localStorage.setItem('todolist', JSON.stringify(todolist));
+}
+
 function addtask() {
+    if (notask()) {
+        return;
+    }
+
     let input=document.querySelector('.input-text');
-    let todoitem=input.value;
+    let todoitem=input.value.trim();
     todolist.push({item: todoitem});
+    savetolocal();
     input.value='';
     displaytask();
 }
 
 function displaytask() {
+     
         let containerelement=document.querySelector('#todo-container');
        
         let newhtml ='';
@@ -17,17 +27,20 @@ function displaytask() {
         for(let i=0;i<todolist.length;i++) {
             let item=todolist[i].item;
             newhtml+=`
-            <div>
+            <div id="input-container">
             <span> <i class="fa-solid fa-heart"></i> ${item}</span>
             <button id="delete-button" onclick="
                todolist.splice(${i},1);
                displaytask();
+               savetolocal();
                ">Done! </button>
             </div>
             `;
             
         }
+         
         containerelement.innerHTML= newhtml;
+         
 }
 
 function showdate(){
@@ -41,5 +54,15 @@ function showdate(){
     let year=todaydate.getFullYear();
     datecontainer.innerHTML=`Date: ${day} ${monthname}, ${year}`;
 }
-  
 
+function notask(){
+    let input=document.querySelector('.input-text');
+    let task=input.value.trim();
+    if(input.value==='') {
+        alert('Please enter a task!');
+        return true;
+    }
+    return false;
+}
+  
+// document.querySelector('#add-button').addEventListener('click', notask);
