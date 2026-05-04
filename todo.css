@@ -47,14 +47,6 @@ button {
   font-size: large;
 }
 
-#show-date{
-  border-radius: 30px;
-  background-color: deeppink;
-  width: 200px;
-  padding: 10px;
-   
-}
-
 button:hover {
   background-color: hotpink;
   transform: scale(1.05);
@@ -81,11 +73,47 @@ button:hover {
 }
 
 #show-date{
+  border-radius: 30px;
+  background-color: deeppink;
+  height: 15px;
+  width: 15px ;
+  padding: 10px;
+  overflow: hidden;
   margin-left: 15px;
   margin-top: 20px;
   font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  transition:transform 1s ease;
+  vertical-align: center;
+  align-items: center;
   
 }
+
+#show-date i{
+  vertical-align: center;
+ font-size: 18px;
+}
+
+#show-date {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.date-text{
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 1s ease;
+}
+
+#show-date.active{
+  transform: translateX(20px);
+  width: 200px;
+ 
+}
+#show-date.active .date-text{
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 #take-task .input-text {
   margin-top: 40px;
@@ -95,7 +123,7 @@ button:hover {
   width: 350px;
   padding:  10px;
   height: 20px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif; 
 }
 
 #input-container #delete-button {

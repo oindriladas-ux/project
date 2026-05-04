@@ -27,9 +27,12 @@
     <link rel="stylesheet" href="todo.css">
 
 </head>
-<body onload="showdate()">
+<body>
     <h1 id="main-heading" >To-Do List</h1>
-    <h3 id="show-date" ></h3>
+    <h3 id="show-date" onclick="toggledate();" >
+        <i class="fa-solid fa-calendar"></i>
+        <span class="date-text"></span>
+    </h3>
    <h3 id="task-heading">Enter a new task:3</h3>
    <div id="take-task">
    <input class="input-text" type="text" placeholder="Enter your task" >

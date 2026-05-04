@@ -33,7 +33,7 @@ function displaytask() {
                todolist.splice(${i},1);
                displaytask();
                savetolocal();
-               ">Done! </button>
+               "><i class="fa-solid fa-trash"></i></button>
             </div>
             `;
             
@@ -45,7 +45,7 @@ function displaytask() {
 
 function showdate(){
     let todaydate= new Date();
-    let datecontainer=document.querySelector('#show-date');
+    let datecontainer=document.querySelector('#show-date .date-text');
 
     let months=['January','February','March','April','May','June','July',"August",'September','October','November','December'];
     
@@ -53,6 +53,14 @@ function showdate(){
     let day=todaydate.getDate();
     let year=todaydate.getFullYear();
     datecontainer.innerHTML=`Date: ${day} ${monthname}, ${year}`;
+}
+
+function toggledate(){
+    let datecontainer=document.querySelector('#show-date');
+    if(!datecontainer.classList.contains('active')) {
+        showdate();
+    }
+    datecontainer.classList.toggle('active');
 }
 
 function notask(){
@@ -64,5 +72,8 @@ function notask(){
     }
     return false;
 }
-  
-// document.querySelector('#add-button').addEventListener('click', notask);
+ 
+
+
+
+
