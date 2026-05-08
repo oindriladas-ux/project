@@ -140,3 +140,9 @@ button:hover {
   width: 300px;   
   margin-right: 10px auto;
 }
+.active{
+  opacity: 0.6;
+  text-decoration: line-through;
+  transition: all 0.5s ease;
+  transform: scale(0.98);
+}

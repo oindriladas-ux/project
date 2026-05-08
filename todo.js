@@ -28,7 +28,7 @@ function displaytask() {
             let item=todolist[i].item;
             newhtml+=`
             <div id="input-container">
-            <span> <i class="fa-solid fa-heart"></i> ${item}</span>
+            <span class="task-${i}"> <i class="fa-solid fa-heart" onclick="toggleinput(${i})"></i> ${item}</span>
             <button id="delete-button" onclick="
                todolist.splice(${i},1);
                displaytask();
@@ -73,6 +73,11 @@ function notask(){
     return false;
 }
  
+function toggleinput(index){
+    let inputcontainer=document.querySelector(`.task-${index}`);
+    inputcontainer.classList.toggle('active');
+    
+}
 
 
 
