@@ -75,7 +75,7 @@ function notask(){
  
 function toggleinput(index){
     let inputcontainer=document.querySelector(`.task-${index}`);
-    inputcontainer.classList.toggle('active');
+    inputcontainer.classList.toggle('complete');
     
 }
 
