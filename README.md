@@ -18,28 +18,6 @@ This project helps users manage daily tasks with an intuitive and visually appea
 - 💾 Local Storage support for saving tasks
 - 🎨 Responsive and modern UI design
 
-
-# 📝 To-Do List Web App
-
-A simple and interactive To-Do List web application built using HTML, CSS, and JavaScript.  
-This project helps users manage daily tasks with an intuitive and visually appealing interface.
-
-## 🌐 Live Demo
-🔗 https://oindriladas-ux.github.io/project/
-
----
-
-## ✨ Features
-
-- ➕ Add new tasks
-- 🗑️ Delete tasks
-- ❤️ Mark tasks as completed with strike-through effect
-- 📅 Interactive calendar/date toggle
-- 💫 Smooth animations and transitions
-- 💾 Local Storage support for saving tasks
-- 🎨 Responsive and modern UI design
-
-
 ## 👩‍💻 Author
 
 **Oindrila Das**
