@@ -28,7 +28,7 @@ function displaytask() {
             let item=todolist[i].item;
             newhtml+=`
             <div id="input-container">
-            <span class="task-${i}"> <i class="fa-solid fa-heart" onclick="toggleinput(${i})"></i> ${item}</span>
+            <span class="task-${i}"> <i class="fa-solid fa-book" onclick="toggleinput(${i})"></i>${item}</span>
             <button id="delete-button" onclick="
                todolist.splice(${i},1);
                displaytask();

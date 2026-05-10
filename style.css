@@ -58,11 +58,18 @@ button:hover {
 }
 
 #delete-button{
+  
+  margin-top: 10px;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-size: large;
   cursor: pointer;
 
+}
+
+i{
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 #todo-container{
