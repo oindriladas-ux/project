@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  scroll-behavior: smooth;
 }
 body{
    display: flex;
@@ -18,6 +19,7 @@ body{
   text-align : center;
   padding-bottom: 30px;
   font-size: 40px;
+  
 }
 
 #task-heading{
@@ -99,7 +101,7 @@ i{
   transition:transform 1s ease;
   vertical-align: center;
   align-items: center;
-  
+  font-size: 18px;
 }
 
 #show-date i{
